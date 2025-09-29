@@ -7,7 +7,7 @@ class Battle {
   Battle(this.trainer, this.pokemon);
 
   void startBattle(String foe, int enemyHP) {
-    print(">$trainer found a wild pokemon!<");
+    print("\n> $trainer found a wild pokemon! <");
     print("$trainer summons ${pokemon.name}");
 
     //attack foe once
@@ -17,7 +17,7 @@ class Battle {
     if (enemyHP <= 0) {
       print("The $foe fainted! ${pokemon.name} won the battle.\n");
     } else {
-      print("The $foe survived with $enemyHP HP left. Now withdrawing...\n");
+     print("The $foe survived with $enemyHP HP left.\n");
     }
   }
 }
